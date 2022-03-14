@@ -43,25 +43,17 @@ These methods allow for fetching, creating, updating, and deleting comments on a
 
 Get all comments on an anim
 
-
-
 `POST /anims/:animId/comments`
 
 Add a new comment to an anim
-
-
 
 `PUT /anims/:animId/comments/:commentId/`
 
 Edit a comment on an anim
 
-
-
 `DELETE /anims/:animId/comments/:commentId/`
 
 Delete a comment on an anim
-
-
 
 ## User Methods
 
@@ -70,8 +62,6 @@ These methods allow for fetching, creating, updating, and deleting user info.
 ### GET /users/:userId
 
 Get a user. See [User](#User)
-
-
 
 ### POST /users/
 
@@ -82,8 +72,6 @@ To create a user, pass in FormData with the following fields.
 | username           | String         | The username of the new user |
 | password           | String         | The password of the new user |
 | h-captcha-response | String         | The captcha response         |
-
-
 
 ### PUT /users/:userId
 
@@ -112,8 +100,6 @@ Deletes a user. Expects FormData.
 | Property        | Expected Value | Description                                               |
 | --------------- | -------------- | --------------------------------------------------------- |
 | currentPassword | String         | The user's current password. Required for authentication. |
-
-
 
 # Reference
 
@@ -154,4 +140,4 @@ Example user object
 | 2     | Idle                |
 | 3     | Do Not Disturb      |
 
-##  
+## 
